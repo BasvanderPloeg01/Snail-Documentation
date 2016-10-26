@@ -6,7 +6,7 @@
 				<h1 class="logo">
 					<a href="index.html">
 						<span aria-hidden="true" class="icon_documents_alt icon"></span>
-						<span class="text-highlight">Pretty</span><span class="text-bold">Docs</span>
+						<span class="text-highlight">Snail</span><span class="text-bold">Docs</span>
 					</a>
 				</h1>
 			</div><!--//branding-->
