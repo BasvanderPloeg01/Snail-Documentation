@@ -6,7 +6,7 @@
 				<h1 class="logo">
 					<a href="index.html">
 						<span aria-hidden="true" class="icon_documents_alt icon"></span>
-						<span class="text-highlight">Snail</span><span class="text-bold">Docs</span>
+						<span class="text-highlight">Snail </span><span class="text-bold">Documentation</span>
 					</a>
 				</h1>
 			</div><!--//branding-->
@@ -30,7 +30,7 @@
 							<div class="section-block">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec imperdiet turpis. Curabitur aliquet pulvinar ultrices. Etiam at posuere leo. Proin ultrices ex et dapibus feugiat <a href="#">link example</a> aenean purus leo, faucibus at elit vel, aliquet scelerisque dui. Etiam quis elit euismod, imperdiet augue sit amet, imperdiet odio. Aenean sem erat, hendrerit  eu gravida id, dignissim ut ante. Nam consequat porttitor libero euismod congue.
 								</p>
-								<a href="http://themes.3rdwavemedia.com" class="btn btn-green" target="_blank"><i class="fa fa-download"></i> Download PrettyDocs</a>
+								<a href="https://github.com//dennisslimmers01/Snail-MVC/archive/v0.5.zip" class="btn btn-green" target="_blank"><i class="fa fa-download"></i> Download Snail MVC</a>
 							</div>
 						</section><!--//doc-section-->
 						<section id="installation-section" class="doc-section">
@@ -92,6 +92,8 @@
 						</section><!--//doc-section-->
 						
 						<section id="code-section" class="doc-section">
+							<h2 class="section-title">Code</h2>
+							<h2 class="section-title">Code</h2>
 							<h2 class="section-title">Code</h2>
 							<div class="section-block">
 								<p>
