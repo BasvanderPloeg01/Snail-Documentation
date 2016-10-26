@@ -33,6 +33,6 @@ class IndexController extends Controller {
          * content based on the
          * parameter
          */
-        $this->view->show("index");
+        $this->view->show_hf("index");
     }
 }

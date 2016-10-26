@@ -7,7 +7,7 @@
  * All constants will instantly be included by
  * the autoloader in the root/index.php file
  */
-define("__URL__", "http://localhost/Snail-MVC/");
+define("__URL__", "http://localhost/Snail-Documentation/");
 
 /*
  * Bool is true if ajax call is made
