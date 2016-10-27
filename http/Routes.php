@@ -15,6 +15,7 @@ class Routes {
          */
         $this->routes = [
              "index" => "IndexController.show",
+             "scripts" => "ScriptsController.show",
              "debug" => "DebugController.show",
              "404" => "PageNotFoundController.show",
              "template" => "TemplateController.show",
