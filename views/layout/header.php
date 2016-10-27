@@ -13,15 +13,15 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<!-- Global CSS -->
-	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+	<?php Link::style('bootstrap.min.css', 'plugins/bootstrap/css') ?>
 	<!-- Plugins CSS -->
-	<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-	<link rel="stylesheet" href="assets/plugins/prism/prism.css">
-	<link rel="stylesheet" href="assets/plugins/lightbox/dist/ekko-lightbox.min.css">
-	<link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+	<?php Link::style('font-awesome.css', 'plugins/font-awesome/css') ?>
+	<?php Link::style('prism.css', 'plugins/prism') ?>
+	<?php Link::style('ekko-lightbox.min.css', 'plugins/lightbox/dist') ?>
+	<?php Link::style('styles.css', 'plugins/elegant_font/css') ?>
 	
 	<!-- Theme CSS -->
-	<link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+	<?php Link::style('styles.css') ?>
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

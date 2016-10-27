@@ -14,32 +14,46 @@ class Link {
      /**
       * @var String
       */
-     private static $absolute_script_path =  'http://localhost/Snail-Documentation//assets/js/';
+     private static $absolute_script_path =  'http://localhost/Snail-Documentation/assets/js/';
 
     /**
      * @var String
      */
-     private static $absolute_img_path = 'http://localhost/Snail-Documentation//assets/img/';
-
+     private static $absolute_img_path = 'http://localhost/Snail-Documentation/assets/img/';
+	
+	/**
+	 * @var String
+	 */
+	private static $absolute_path = 'http://localhost/Snail-Documentation/assets/';
 
 
     /**
      * @param $css_file
+     * @param $folder
      *
      * Generates a stylesheet link
      */
-     public static function style($css_file) {
-          echo '<link href="' . self::$absolute_style_path . $css_file . '" rel="stylesheet">' . "\n";
+     public static function style($css_file, $folder = null) {
+	     if ($folder == null) {
+		     echo '<link href="' . self::$absolute_style_path . $css_file . '" rel="stylesheet">' . "\n";
+	     } else {
+		     echo '<link href="' . self::$absolute_path . $folder . '/' . $css_file . '" rel="stylesheet">' . "\n";
+	     }
      }
 
     /**
      * @param $js_file
+     * @param $folder
      *
      * Generates a javascript
      * file link
      */
-     public static function script($js_file) {
-          echo '<script src="' . self::$absolute_script_path . $js_file . '"></script>' . "\n";
+     public static function script($js_file, $folder = null) {
+	     if ($folder == null) {
+		     echo '<script src="' . self::$absolute_script_path . $js_file . '"></script>' . "\n";
+	     } else {
+		     echo '<script src="' . self::$absolute_path . $folder . '/' . $js_file . '"></script>' . "\n";
+	     }
      }
 
     /**
@@ -55,14 +69,21 @@ class Link {
      * @param $src
      * @param $width
      * @param $height
+     * @param $css
+     * @param $folder
      *
      * generates img tag
      */
-    public static function img($src, $width, $height, $css = null) {
+    public static function img($src, $width, $height, $css = null, $folder = null) {
         /*
          * @var String
          */
-        $src = self::$absolute_img_path . $src;
+	    if ($folder == null) {
+		    $src = self::$absolute_img_path . $src;
+	    } else{
+		    $src = self::$absolute_path . $folder . '/' . $src;
+	    }
+        
 
         echo '<img src="' . $src . '" class="' . empty($css) ? "" : $css . '"
                width="' . $width . '" height="' . $height.'">' . "\t";

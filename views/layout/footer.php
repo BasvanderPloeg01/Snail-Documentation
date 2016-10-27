@@ -9,13 +9,12 @@
 	
 	
 	<!-- Main Javascript -->
-	<script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
-	<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
-	<script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
-	<script type="text/javascript" src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>
-	<script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
-	<script type="text/javascript" src="assets/js/main.js"></script>
-	
+	<?php Link::script('jquery-1.12.3.min.js', 'plugins'); ?>
+	<?php Link::script('bootstrap.min.js', 'plugins/bootstrap/js'); ?>
+	<?php Link::script('prism.js', 'plugins/prism'); ?>
+	<?php Link::script('jquery.scrollTo.min.js', 'plugins/jquery-scrollTo'); ?>
+	<?php Link::script('ekko-lightbox.min.js', 'plugins/lightbox/dist'); ?>
+	<?php Link::script('jquery.matchHeight-min.js', 'plugins/jquery-match-height'); ?>
+	<?php Link::script('main.js'); ?>
 	</body>
 </html> 
