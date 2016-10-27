@@ -17,4 +17,4 @@
 	<?php Link::script('jquery.matchHeight-min.js', 'plugins/jquery-match-height'); ?>
 	<?php Link::script('main.js'); ?>
 	</body>
-</html>  
+</html>
